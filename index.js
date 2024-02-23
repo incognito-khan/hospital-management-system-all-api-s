@@ -11,6 +11,9 @@ app.use(express.json());
 // app.use(bodyParser.json());
 
 // API Routes
+app.get('/', (req, res) => {
+  res.json('API is running!');
+});
 app.use("/api/patient/", patientRouter);
 
 // Connect to MongoDB
