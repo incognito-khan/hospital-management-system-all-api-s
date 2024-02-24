@@ -27,11 +27,6 @@ const PatientSchema = new mongoose.Schema({
     required: true
   },
 
-  date: {
-    type: Date,
-    default: Date.now()
-  },
-
   // familyHealth: [FamilyMemberSchema],
   
   phoneNumber: {
@@ -58,8 +53,7 @@ const PatientSchema = new mongoose.Schema({
 
   medicalHistory: [{
     condition: String,
-    treatment: String,
-    date: Date.now()
+    treatment: String
   }]
 });
 
